@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #9900ff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -71,8 +71,8 @@ body,
 }
 
 body {
-  background-color: #1e1e1e;
-  color: #ffffff;
+  background-color: #19b165a8;
+  color: #24104b;
 }
 
 button:hover {

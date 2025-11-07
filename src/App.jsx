@@ -4,15 +4,19 @@ export default function App() {
   const [fact, setFact] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // Write a function that fetches data from the API 
-  // API : https://uselessfacts.jsph.pl/random.json?language=en
-  // use fetch (), .then(res => res.json()), .then(data => ...)
+
+
   const fetchFact = () => {
-    // TODO: write fetch logic here
+
+    fetch("https://uselessfacts.jsph.pl/random.json?language=en")
+      .then((res) => res.json())
+      .then((data) => setFact(`${data.text}`));
+
   };
 
   useEffect(() => {
-    // TODO : call fetchFact()
+  
+    fetchFact()
 
   }, []);
 
